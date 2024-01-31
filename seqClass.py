@@ -1,4 +1,4 @@
-m6#!/usr/bin/env python
+#!/usr/bin/env python
 
 import sys, re
 from argparse import ArgumentParser

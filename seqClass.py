@@ -13,6 +13,9 @@ if len(sys.argv) == 1:
 args = parser.parse_args()
 
 args.seq = args.seq.upper()                 # Note we just added this line
+
+if 'T' in args.seq and 'U' in args.seq:
+    print('The sequence is not DNA nor RNA (both T and U present)')
 if re.search('^[ACGTU]+$', args.seq):
     if re.search('T', args.seq):
         print ('The sequence is DNA')
